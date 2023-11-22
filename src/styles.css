@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Eight Bit Dragon';
+    src: url(./fonts/EightBitDragon-anqx.ttf);
+}
+
+@font-face {
+    font-family: 'Super Legend Boy';
+    src: url(./fonts/SuperLegendBoy-4w8Y.ttf);
+}
+
+body {
+    background-color: #e899ce;
+    color: black;
+    font-family: 'Eight Bit Dragon';
+}
+
+#container ul li {
+    list-style-type: none;
+    text-align: right;
+}
+
+#container ul li a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.2s;
+}
+
+#container ul li a:hover {
+    color: white;
+}
+
+#bone {
+    margin-right: 7px;
+}
+
+#skull {
+    margin-right: 10px;
+}
+
+#container h1, #container h3 {
+    font-weight: normal;
+}
+
+@media only screen and (min-width: 600px){
+    #container {
+        height: 500px;
+        width: 500px;
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        margin-left: -250px;
+        margin-top: -250px;
+    }
+    #container ul li {
+        margin: 10px 0px 10px 0px;
+        font-size: 20px;
+    }
+}
