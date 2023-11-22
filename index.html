@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arii <3</title>
+        <link rel="stylesheet" href="./src/styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1><img id="skull" src="src/images/skull.png" height="35">femcel.online</h1>
+            <p>girl on the internet</p>
+            <ul>
+                <li><a class="link" target="_blank" href="https://instagram.com/involuntari">instagram</a></li>
+                <li><a class="link" target="_blank" href="https://instagram.com/elonmusksfiance">alt instagram</a></li>
+                <li><a class="link" target="_blank" href="https://www.amazon.com/hz/wishlist/ls/HZN9SLHF681L?ref_=wl_share">wishlist</a></li>
+                <li><a class="link" target="_blank" href="https://www.snapchat.com/add/incellectual">snap</a></li>
+                <li><a class="link" target="_blank" href="https://www.costarastrology.com/urfemcel">costar</a></li>
+                <li><a class="link" target="_blank" href="https://www.depop.com/satiree/">depop</a></li>
+                <li><a class="link" target="_blank" href="https://steamcommunity.com/id/sinkingmoons/">steam</a></li>
+            </ul>
+        </div>        
+    </body>
+    <script>
+        if (window.innerHeight > 600){
+            links = document.querySelectorAll('.link');
+            for(let a of links){
+                a.addEventListener('mouseover', () => {
+                    const bone = document.createElement('img');
+                    bone.id = 'bone';
+                    bone.src = "src/images/bone.png";
+                    bone.height = '17';
+                   
+                    if(!document.getElementById('bone')){
+                        a.insertBefore(bone, a.firstChild);
+                    }
+                });
+                a.addEventListener('mouseleave', () => {
+                    if(document.getElementById('bone')){
+                        a.querySelector('#bone').remove();
+                    }
+                });
+            }
+        }
+    </script>
+</html> 
