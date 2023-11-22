@@ -14,15 +14,28 @@ body {
     font-family: 'Eight Bit Dragon';
 }
 
+#container {
+    height: 60%;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    margin-left: -35%;
+}
+
 #container ul li {
     list-style-type: none;
-    text-align: right;
+    text-align: center;
+    font-size: 25px;
 }
 
 #container ul li a {
     text-decoration: none;
     color: black;
     transition-duration: 0.2s;
+    display: list-item;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #container ul li a:hover {
@@ -52,7 +65,11 @@ body {
         margin-top: -250px;
     }
     #container ul li {
-        margin: 10px 0px 10px 0px;
+        text-align: right;
         font-size: 20px;
+    }
+    
+    #container ul li a {
+        padding: 10px 0px 10px 0px;
     }
 }

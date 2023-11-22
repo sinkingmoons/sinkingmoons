@@ -3,6 +3,7 @@
     <head>
         <title>arii <3</title>
         <link rel="stylesheet" href="./src/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="container">
@@ -20,25 +21,25 @@
         </div>        
     </body>
     <script>
-        if (window.innerHeight > 600){
-            links = document.querySelectorAll('.link');
-            for(let a of links){
-                a.addEventListener('mouseover', () => {
-                    const bone = document.createElement('img');
-                    bone.id = 'bone';
-                    bone.src = "src/images/bone.png";
-                    bone.height = '17';
-                   
-                    if(!document.getElementById('bone')){
-                        a.insertBefore(bone, a.firstChild);
-                    }
-                });
-                a.addEventListener('mouseleave', () => {
-                    if(document.getElementById('bone')){
-                        a.querySelector('#bone').remove();
-                    }
-                });
-            }
+        links = document.querySelectorAll('.link');
+        for(let a of links){
+            a.addEventListener('mouseover', () => {
+                if (document.documentElement.clientWidth < 600) return;
+                const bone = document.createElement('img');
+                bone.id = 'bone';
+                bone.src = "src/images/bone.png";
+                bone.height = '17';
+               
+                if(!document.getElementById('bone')){
+                    a.insertBefore(bone, a.firstChild);
+                }
+            });
+            a.addEventListener('mouseleave', () => {
+                if (document.documentElement.clientWidth < 600) return;
+                if(document.getElementById('bone')){
+                    a.querySelector('#bone').remove();
+                }
+            });
         }
     </script>
 </html> 
