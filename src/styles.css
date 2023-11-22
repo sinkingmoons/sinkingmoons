@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Eight Bit Dragon';
-    src: url(./fonts/EightBitDragon-anqx.ttf);
+    src: url(./fonts/EightBitDragon.ttf);
 }
 
 @font-face {
     font-family: 'Super Legend Boy';
-    src: url(./fonts/SuperLegendBoy-4w8Y.ttf);
+    src: url(./fonts/SuperLegendBoy.ttf);
 }
 
 body {
