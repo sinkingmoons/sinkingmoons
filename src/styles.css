@@ -19,8 +19,20 @@ body {
     width: 70%;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 20%;
     margin-left: -35%;
+}
+
+#container h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#container p {
+    margin-top: 3px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 #container ul li {
@@ -34,8 +46,8 @@ body {
     color: black;
     transition-duration: 0.2s;
     display: list-item;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 
 #container ul li a:hover {
@@ -46,12 +58,19 @@ body {
     margin-right: 7px;
 }
 
+/*
+ * Only display skull image if screen is wider than 500px
+ * to prevent weird text wrapping with the image 
+ */
 #skull {
-    margin-right: 10px;
+    display: none;
 }
 
-#container h1, #container h3 {
-    font-weight: normal;
+@media only screen and (min-width: 500px){
+    #skull {
+        display: inline;
+        margin-right: 10px;
+    }
 }
 
 @media only screen and (min-width: 600px){
@@ -64,12 +83,14 @@ body {
         margin-left: -250px;
         margin-top: -250px;
     }
+
     #container ul li {
         text-align: right;
         font-size: 20px;
     }
     
     #container ul li a {
+        transition-duration: 0s;
         padding: 10px 0px 10px 0px;
     }
 }
