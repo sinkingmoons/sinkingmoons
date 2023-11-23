@@ -16,15 +16,15 @@ body {
 
 #container {
     height: 60%;
-    width: 70%;
+    width: 80%;
     position: absolute;
     left: 50%;
-    top: 20%;
-    margin-left: -35%;
+    top: 15%;
+    margin-left: -40%;
 }
 
 #container h1 {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     margin-bottom: 5px;
 }
