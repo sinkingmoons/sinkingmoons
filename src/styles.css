@@ -34,6 +34,10 @@ body {
     margin-bottom: 30px;
     text-align: center;
 }
+  
+#container ul {
+    padding: 0;
+}
 
 #container ul li {
     list-style-type: none;
